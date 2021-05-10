@@ -6,7 +6,12 @@
   "scripts": {
     "start": "node index.js",
     "seed": "node seed.js",
-    "test": "jest --watchAll --verbose"
+    "test": "jest --watchAll --verbose",
+    "watch": "nodemon"
+  },
+  "nodemonConfig": {
+    "delay": 2000,
+    "ignore": []
   },
   "keywords": [],
   "author": "",
@@ -29,6 +34,7 @@
   },
   "devDependencies": {
     "jest": "^22.2.2",
+    "nodemon": "^2.0.7",
     "supertest": "^3.0.0"
   }
 }
